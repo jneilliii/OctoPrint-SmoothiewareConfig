@@ -21,7 +21,7 @@ class smoothiewareConfigPlugin(octoprint.plugin.StartupPlugin):
 
 	def get_update_information(self):
 		return dict(
-			OctoPrint-SmoothiewareConfig=dict(
+			smoothiewareconfig=dict(
 				displayName="OctoPrint-SmoothiewareConfig Plugin",
 				displayVersion=self._plugin_version,
 

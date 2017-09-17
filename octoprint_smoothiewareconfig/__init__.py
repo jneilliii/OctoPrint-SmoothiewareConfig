@@ -3,7 +3,11 @@ from __future__ import absolute_import
 
 import octoprint.plugin
 
-class OctoPrint-SmoothiewareConfigPlugin():
+class smoothiewareConfigPlugin(octoprint.plugin.StartupPlugin):
+
+	##~~ Startup plugin mixin
+	def on_after_startup(self):
+		self._logger.info("SmoothiewareConfigPlugin loaded!")
 
 	##-- Image upload extenstion tree hook
 	def get_extension_tree(self, *args, **kwargs):
@@ -40,7 +44,7 @@ __plugin_name__ = "Octoprint-SmoothiewareConfig Plugin"
 
 def __plugin_load__():
 	global __plugin_implementation__
-	__plugin_implementation__ = OctoPrint-SmoothiewareConfigPlugin()
+	__plugin_implementation__ = smoothiewareConfigPlugin()
 
 	global __plugin_hooks__
 	__plugin_hooks__ = {

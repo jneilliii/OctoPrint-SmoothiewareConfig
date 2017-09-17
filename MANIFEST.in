@@ -1,0 +1,4 @@
+include README.md
+recursive-include OctoPrint-SmoothiewareConfig/templates *
+recursive-include OctoPrint-SmoothiewareConfig/translations *
+recursive-include OctoPrint-SmoothiewareConfig/static *

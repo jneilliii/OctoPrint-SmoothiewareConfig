@@ -12,7 +12,7 @@ class smoothiewareConfigPlugin(octoprint.plugin.StartupPlugin):
 	##-- Image upload extenstion tree hook
 	def get_extension_tree(self, *args, **kwargs):
 		return dict(
-			machinecode=dict(
+			model=dict(
 				smoothiwarefiles=["txt", "bin"]
 			)
 		)

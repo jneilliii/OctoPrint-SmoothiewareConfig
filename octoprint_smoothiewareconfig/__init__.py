@@ -13,7 +13,10 @@ class smoothiewareConfigPlugin(octoprint.plugin.StartupPlugin):
 	def get_extension_tree(self, *args, **kwargs):
 		return dict(
 			model=dict(
-				smoothiwarefiles=["txt", "bin"]
+				smoothiwarefiles=["bin"]
+			),
+			machinecode=dict(
+				smoothiwarefiles=["txt"]
 			)
 		)
 
